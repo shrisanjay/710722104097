@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  average-calculator:
+    build: .
+    ports:
+      - "9876:9876"
+    environment:
+      - PORT=9876
+    restart: unless-stopped
